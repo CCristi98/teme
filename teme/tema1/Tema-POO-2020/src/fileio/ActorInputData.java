@@ -10,7 +10,7 @@ import java.util.Map;
  * <p>
  * DO NOT MODIFY
  */
-public final class ActorInputData {
+public class ActorInputData {
     /**
      * actor name
      */
@@ -37,34 +37,51 @@ public final class ActorInputData {
         this.awards = awards;
     }
 
+    /**
+     * getter for name
+     */
     public String getName() {
         return name;
     }
-
+    /**
+     * setter for name
+     */
     public void setName(final String name) {
         this.name = name;
     }
-
+    /**
+     * getter for filmography of an actor
+     */
     public ArrayList<String> getFilmography() {
         return filmography;
     }
-
+    /**
+     * setter for filmography of an actor
+     */
     public void setFilmography(final ArrayList<String> filmography) {
         this.filmography = filmography;
     }
-
+    /**
+     * getter for the awards won by an actor
+     */
     public Map<ActorsAwards, Integer> getAwards() {
         return awards;
     }
-
+    /**
+     * getter for career drescription
+     */
     public String getCareerDescription() {
         return careerDescription;
     }
-
+    /**
+     * setter for career description
+     */
     public void setCareerDescription(final String careerDescription) {
         this.careerDescription = careerDescription;
     }
-
+    /**
+     * method used for formatting printed data of an input
+     */
     @Override
     public String toString() {
         return "ActorInputData{"

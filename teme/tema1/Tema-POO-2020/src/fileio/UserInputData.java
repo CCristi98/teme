@@ -8,7 +8,7 @@ import java.util.Map;
  * <p>
  * DO NOT MODIFY
  */
-public final class UserInputData {
+public class UserInputData {
     /**
      * User's username
      */
@@ -35,22 +35,33 @@ public final class UserInputData {
         this.history = history;
     }
 
+    /**
+     * getter for the username
+     */
     public String getUsername() {
         return username;
     }
-
+    /**
+     * getter for watching history of an user
+     */
     public Map<String, Integer> getHistory() {
         return history;
     }
-
+    /**
+     * getter for type of subscription
+     */
     public String getSubscriptionType() {
         return subscriptionType;
     }
-
+    /**
+     * getter for the list of favourite videos
+     */
     public ArrayList<String> getFavoriteMovies() {
         return favoriteMovies;
     }
-
+    /**
+     * method used for formatting printed data of an user
+     */
     @Override
     public String toString() {
         return "UserInputData{" + "username='"

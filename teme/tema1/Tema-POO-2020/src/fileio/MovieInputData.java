@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * <p>
  * DO NOT MODIFY
  */
-public final class MovieInputData extends ShowInput {
+public class MovieInputData extends ShowInput {
     /**
      * Duration in minutes of a season
      */
@@ -20,10 +20,15 @@ public final class MovieInputData extends ShowInput {
         this.duration = duration;
     }
 
+    /**
+     * getter for episode duration of a season
+     */
     public int getDuration() {
         return duration;
     }
-
+    /**
+     * method used for formatting printed data of an input
+     */
     @Override
     public String toString() {
         return "MovieInputData{" + "title= "

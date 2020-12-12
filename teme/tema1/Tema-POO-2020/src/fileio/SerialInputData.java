@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * <p>
  * DO NOT MODIFY
  */
-public final class SerialInputData extends ShowInput {
+public class SerialInputData extends ShowInput {
     /**
      * Number of seasons
      */
@@ -28,14 +28,22 @@ public final class SerialInputData extends ShowInput {
         this.seasons = seasons;
     }
 
+    /**
+     * getter for number of season
+     */
     public int getNumberSeason() {
         return numberOfSeasons;
     }
-
+    /**
+     * getter for seasons
+     */
     public ArrayList<Season> getSeasons() {
         return seasons;
     }
 
+    /**
+     * method used for formatting printed data of an input
+     */
     @Override
     public String toString() {
         return "SerialInputData{" + " title= "
